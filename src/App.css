@@ -1,0 +1,13 @@
+.general {
+  min-height: 100vh; /* Ocupa, como mínimo, toda la altura de la pantalla */
+  display: flex;
+  flex-direction: column; /* Apila los elementos (header, div) uno encima del otro */
+  align-items: center; /* alineacion horizontal */
+  justify-content: top; /* alineacion vertical */
+}
+
+.div-centrado{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Horizontal */
+}
