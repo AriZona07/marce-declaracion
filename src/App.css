@@ -1,7 +1,7 @@
 .general {
   display: flex;
   min-height: 100vh; /* Ocupa, como mínimo, toda la altura de la pantalla */
-  padding: 0 2.5rem; /* Añade un relleno horizontal */
+  padding: 0 1.5rem; /* Añade un relleno horizontal */
   flex-direction: column; /* Apila los elementos (header, div) uno encima del otro */
   align-items: center; /* alineacion horizontal */
   justify-content: top; /* alineacion vertical */
