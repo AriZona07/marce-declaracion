@@ -9,7 +9,7 @@ on:
 
 # Permisos para que la Action pueda escribir en la rama gh-pages
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
