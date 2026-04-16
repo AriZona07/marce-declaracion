@@ -30,6 +30,7 @@
   flex-direction: column;
   align-self: center; /* Horizontal */
   border: none;
-  width: 560px; 
-  height: 315px;
+  /* Tamaño del recuadro del video */
+  width: 50rem; /* Horizontal */
+  height: 25rem; /* Vertical */
 }
