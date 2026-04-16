@@ -30,3 +30,5 @@ npm run dev
 *   Elegir y añadir una fuente de texto personalizada (por ejemplo, de Google Fonts) para darle un toque más personal.
 *   Crear componentes reutilizables para organizar mejor el código (por ejemplo, un componente para la cabecera o para las tarjetas de mensaje).
 *   Añadir interactividad, como un botón que al pulsarlo revele un nuevo mensaje o una imagen.
+*   Añadir una sección con una playlist de YouTube incrustada que contenga canciones de amor de sus artistas favoritos.
+*   Investigar cómo crear un mini reproductor de música de solo audio en la página para escuchar esas mismas canciones.
