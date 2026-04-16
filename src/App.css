@@ -1,13 +1,35 @@
 .general {
   min-height: 100vh; /* Ocupa, como mínimo, toda la altura de la pantalla */
+  padding: 0 2.5rem; /* Añade un relleno horizontal
   display: flex;
   flex-direction: column; /* Apila los elementos (header, div) uno encima del otro */
   align-items: center; /* alineacion horizontal */
   justify-content: top; /* alineacion vertical */
 }
 
+.header{
+  display: flex;
+  flex-direction: column; 
+  align-items: center; /* alineacion horizontal */
+}
+
 .div-centrado{
     display: flex;
     flex-direction: column;
     align-items: center; /* Horizontal */
+}
+
+.div-izquierda{
+    display: flex;
+    flex-direction: column;
+    align-items: left; /* Horizontal */
+}
+
+.youtube-video{
+  display: flex;
+  flex-direction: column;
+  align-self: center; /* Horizontal */
+  border: none;
+  width: 560px; 
+  height: 315px;
 }
