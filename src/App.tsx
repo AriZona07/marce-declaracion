@@ -9,7 +9,7 @@ function App() {
       </header>
 
       <div className="div-centrado">
-        <p>Hola mi niña, hice esta página</p>
+        <p>Hola mi niña, hice esta página para ti, para que veas cómo te quiero</p>
       </div>
     </div>
   )
