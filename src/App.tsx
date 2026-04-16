@@ -8,7 +8,7 @@ function App() {
         <h1>Marce</h1>
         <h2>Esto es para ti, te amo 💕</h2>
 
-        <div>
+        <div className="div-centro">
           <p>Hola mi niña, hice esta página para ti, para que veas cómo te quiero</p>
         </div>
       </header>
@@ -30,7 +30,7 @@ function App() {
         </iframe>
       </div>
 
-      
+
     </div>
   )
 }
