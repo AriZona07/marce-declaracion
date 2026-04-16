@@ -9,12 +9,15 @@ on:
 
 # Permisos para que la Action pueda escribir en la rama gh-pages
 permissions:
-  contents: write
+  contents: read
   pages: write
   id-token: write
 
 jobs:
   build-and-deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
@@ -23,15 +26,22 @@ jobs:
       - name: Setup Node.js and npm 🏗️
         uses: actions/setup-node@v6
         with:
-          node-version: '24' # O la versión de Node que estés usando
+          node-version: '20' # O la versión de Node que estés usando
 
       - name: Install and Build 🔧 # Instala dependencias y compila el proyecto
         run: |
           npm install
           npm run build
 
-      - name: Deploy 🚀
-        uses: peaceiris/actions-gh-pages@v4
+      - name: Setup Pages ⚙️
+        uses: actions/configure-pages@v6
+
+      - name: Upload artifact 📦
+        uses: actions/upload-pages-artifact@v5
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          # Sube el directorio dist
+          path: './dist'
+
+      - name: Deploy to GitHub Pages 🚀
+        id: deployment
+        uses: actions/deploy-pages@v5
