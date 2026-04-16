@@ -11,7 +11,8 @@
   display: flex;
   flex-direction: column; 
   align-items: center; /* alineacion horizontal */
-  margin: clamp(2rem, 3vw, 4rem);
+  /* El margin de abajo se aplica a los 4 lados. Intenta agregarle un ' 0' al final para que los lados queden en 0 */
+  margin: clamp(2rem, 3vw, 4rem) 0;
 }
 
 .div-centrado{
@@ -19,7 +20,8 @@
   flex-direction: column;
   align-items: center; /* Horizontal */
   gap: clamp(2rem, 3vw, 4rem); 
-  margin: clamp(2rem, 3vw, 4rem);
+  /* Igual que en .header, te sugiero agregarle el ' 0' al final a este margin para que no sume espacio horizontal extra */
+  margin: clamp(2rem, 3vw, 4rem) 0;
 }
 
 .div-izquierda{
