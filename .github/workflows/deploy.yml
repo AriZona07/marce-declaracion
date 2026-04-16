@@ -23,7 +23,7 @@ jobs:
       - name: Setup Node.js and npm 🏗️
         uses: actions/setup-node@v4
         with:
-          node-version: '20' # O la versión de Node que estés usando
+          node-version: '24' # O la versión de Node que estés usando
 
       - name: Install and Build 🔧 # Instala dependencias y compila el proyecto
         run: |
