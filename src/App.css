@@ -1,6 +1,6 @@
 .general {
   min-height: 100vh; /* Ocupa, como mínimo, toda la altura de la pantalla */
-  padding: 0 2.5rem; /* Añade un relleno horizontal
+  padding: 0 2.5rem; /* Añade un relleno horizontal */
   display: flex;
   flex-direction: column; /* Apila los elementos (header, div) uno encima del otro */
   align-items: center; /* alineacion horizontal */
@@ -31,6 +31,8 @@
   align-self: center; /* Horizontal */
   border: none;
   /* Tamaño del recuadro del video */
-  width: 50rem; /* Horizontal */
-  height: 25rem; /* Vertical */
+  width: 100%; /* Ocupará el 100% del contenedor padre en celulares */
+  max-width: 50rem; /* Pero no crecerá más de 50rem en PC */
+  aspect-ratio: 16 / 9; /* Mantiene la proporción original del video */
+  height: auto; /* La altura se calcula sola basada en el ancho */
 }
